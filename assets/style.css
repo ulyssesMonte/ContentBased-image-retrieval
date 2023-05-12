@@ -1,0 +1,86 @@
+:root {
+    --poppins: "Poppins", sans-serif;
+    --logoColor: #ffffff;
+    --textColor: white;
+    --BackgroundColor: #202020;
+    --BackgroundColorTwo: #383838;
+    --BackgroundColorThree: #505050;
+    --BackgroundColorFour: #686868;
+}
+
+Body {
+    background-color: var(--BackgroundColor) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--poppins);
+    font-weight: 700;
+    color: var(--textColor);
+    text-align: center;
+}
+
+p,
+a,
+ul li {
+    font-family: var(--poppins);
+    font-weight: 400;
+    color: var(--textColor);
+}
+
+.input-group .form-control {
+    background-color: var(--BackgroundColorTwo);
+    color: var(--textColor);
+    border-radius: 50px;
+    border: 1px solid var(--BackgroundColorThree);
+}
+
+.input-group .form-control:focus,
+.input-group .form-control:active {
+    background-color: var(--BackgroundColorTree);
+    color: var(--textColor);
+    border-radius: 50px;
+    border: 1px solid var(--BackgroundColorFour);
+}
+
+.input-group .input-group-btn .btn {
+    background-color: var(--BackgroundColorThree);
+    border: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.input-group .input-group-btn .btn-primary:focus,
+.input-group .input-group-btn .btn-orimary:active {
+    background-color: var(--BackgroundColorFour);
+    border: none;
+}
+
+section#display {
+    padding-top: 5rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.aimg {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media only screen and (max-width: 414px) {
+    #display div {
+        padding: 0;
+    }
+
+    .aimg {
+        margin: 0;
+        max-width: 250px;
+    }
+}
